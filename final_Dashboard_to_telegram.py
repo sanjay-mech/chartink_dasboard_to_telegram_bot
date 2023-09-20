@@ -75,7 +75,7 @@ def scrape_and_send():
                 print("No data found on the webpage.")
 
 # Schedule the job to run every 15 minutes
-schedule.every(2).minutes.do(scrape_and_send)
+schedule.every(0).minutes.do(scrape_and_send)
 
 while True:
     schedule.run_pending()
